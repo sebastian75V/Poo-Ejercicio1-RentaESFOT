@@ -16,13 +16,14 @@ public class Main {
             System.out.println("\n--- MENU RENTAESFOT ---");
             System.out.println("1. Registrar auto");
             System.out.println("2. Registrar camioneta");
-            System.out.println("3. Mostrar vehículos");
+            System.out.println("3. Mostrar vehiculos");
             System.out.println("4. Cotizar alquiler");
-            System.out.println("5. Mostrar estadísticas");
+            System.out.println("5. Mostrar estadisticas");
             System.out.println("6. Salir");
-            System.out.print("Ingrese opción: ");
+            System.out.print("Ingrese opcion: ");
 
             opcion = scanner.nextInt();
+            scanner.nextLine();
 
             switch (opcion) {
                 case 1:
@@ -81,6 +82,7 @@ public class Main {
             System.out.println("Error: El número de puertas debe ser mayor a 0.");
             return;
         }
+        scanner.nextLine();
 
         System.out.print("¿Tiene aire acondicionado? (s/n): ");
         String acInput = scanner.nextLine().trim().toLowerCase();
